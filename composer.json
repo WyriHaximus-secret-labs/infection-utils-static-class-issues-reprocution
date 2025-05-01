@@ -1,0 +1,46 @@
+{
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Cees-Jan Kiewiet",
+      "email": "ceesjank@gmail.com",
+      "homepage": "http://wyrihaximus.net/"
+    }
+  ],
+  "require": {
+    "php": "^8.3",
+    "ext-json": "^8.3",
+    "psr/log": "^2 || ^3"
+  },
+  "require-dev": {
+    "infection/infection": "*",
+    "phpunit/phpunit": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "WyriHaximus\\PSR3\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "WyriHaximus\\Tests\\PSR3\\": "tests/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/package-versions-deprecated": true,
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "ergebnis/composer-normalize": true,
+      "icanhazstring/composer-unused": true,
+      "infection/extension-installer": true,
+      "localheinz/composer-normalize": true,
+      "ocramius/package-versions": true,
+      "phpstan/extension-installer": true,
+      "wyrihaximus/makefiles": true
+    },
+    "platform": {
+      "php": "8.3.13"
+    },
+    "sort-packages": true
+  }
+}
